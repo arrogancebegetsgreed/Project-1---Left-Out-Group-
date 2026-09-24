@@ -1,3 +1,32 @@
 @startuml use_case
-
+:User:
+:Students:
+:Database:
+User --> (Signup)
+User --> (Login)
+(Signup) -> Database
+(Login) -> (Authenticate)
+(Authenticate) -> Database
+Database <|-- (User Does Not Exist)
+(User Does Not Exist) - Database : Username not in database
+Database <|-- (Incorrect Password)
+(Incorrect Password) - Database : User found but password doesn't match
+(Incorrect Password) <|-- (Retry Login)
+(User Does Not Exist) <|-- (Retry Login)
+(Signup) <|-- (Invalid Username)
+(Invalid Username) - (Signup) : Username does not meet requirements
+(Signup) <|-- (Invalid Password)
+(Invalid Password) - (Signup) : Password does not meet requirements
+(Signup) <|-- (Account Exists)
+(Account Exists) - (Signup) : Account already exists, login
+(Account Exists) <|-- (Login)
+(Account Exists) - Login : Send to login >
+(Authenticate) -> Students
+Students --> Database
+Students -> (View Completed Courses)
+Students -> (Update Letter Grade)
+(Update Letter Grade) <|-- (Course Incomplete)
+Students -> (Delete Course)
+(Delete Course) <|-- (Course Incomplete)
+(Course Incomplete) - (Delete Course) : Course In Progress or Doesn't Exist
 @enduml
