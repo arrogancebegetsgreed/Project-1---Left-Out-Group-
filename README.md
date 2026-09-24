@@ -58,6 +58,11 @@ Assign roles to each team member by completing the table below. A member may tak
 |Name|Role(s)|
 |--|--|
 |name|manager,developer,tester,documenter|
+|Caine Mayhew|Role|
+|Soul Martin|Role|
+|Ethan Sroka|Role|
+|Jose Torres|Role|
+
 
 # Modeling Phase
 
