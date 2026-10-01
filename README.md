@@ -61,7 +61,7 @@ Assign roles to each team member by completing the table below. A member may tak
 |Caine Mayhew|Role|
 |Soul Martin|Role|
 |Ethan Sroka|Role|
-|Jose Torres|Role|
+|Jose Torres|Documenter|
 
 
 # Modeling Phase
