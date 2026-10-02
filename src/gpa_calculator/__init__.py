@@ -26,7 +26,17 @@ def calculate_gpa(enrollments):
     total_points = 0
     total_credits = 0
     for enrollment in enrollments:
-        credits = enrollments.course.credits
+        credits = enrollment.course.credits
         grade = enrollment.grade
-        Student_Grade_Points = GRADE_POINTS[grade]
+        Student_Grade_Points = GRADE_POINTS.get(grade)
+
+        if Student_Grade_Points is None:
+            continue
+
+        ##weighted
+        total_points += Student_Grade_Points * credits
+        total_credits += credits
+
+    return total_points/total_credits if total_credits else 0
+        
     
