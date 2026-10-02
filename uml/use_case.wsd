@@ -20,22 +20,29 @@ User --> (Signup)
 (Re-enter Password) ..> (Login): <<extend>>[Password Invalid]
 
 (Account Created) ..> (Signup):<<extend>>[User and Pass Valid]
-(Account Created) --> Database 
+(Account Created) --> Database
+(Account Created) ..>(Login): <<include>> 
 note left of (Account Created):"User becomes Student"
 
 
 
 Student --> (View Previously Completed Courses)
+(Unviewable) ..> (View Previously Complete Courses): <<extend>>[Course Incomplete]
+
 Student --> (View GPA)
 Student --> (Update Letter Grade)
+(Cannot Update Grade) ..> (Update Letter Grade): <<extend>>[Course Invalid]
+note right of (Cannot Update Grade): "Course Missing/Not on Roster"
 Student --> (Delete Course)
+(Cannot Delete Course) ..> (Delete Course): <<extend>>[Course Incomplete]
+note left of (Cannot Delete Course): "Course Incomplete or Missing"
+
 
 
 System --> (Display all Previous Courses)
 System --> (Calculate GPA)
 System --> (Display GPA)
 
-
 }
+@endum1
 
-@enduml
