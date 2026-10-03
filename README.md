@@ -60,7 +60,7 @@ Assign roles to each team member by completing the table below. A member may tak
 |name|manager,developer,tester,documenter|
 |Caine Mayhew|Manager|
 |Soul Martin|Role|
-|Ethan Sroka|Role|
+|Ethan Sroka|Developer|
 |Jose Torres|Documenter|
 
 
