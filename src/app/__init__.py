@@ -35,5 +35,7 @@ def load_user(id):
         return db.session.query(User).filter(User.id==id).one()
     except: 
         return None
+        
 
 from app import routes
+
