@@ -39,5 +39,3 @@ def load_user(id):
 
 from app import routes
 
-    print(db.engine.url)
-    print(db.session.scalars(db.select(Course)).all())
