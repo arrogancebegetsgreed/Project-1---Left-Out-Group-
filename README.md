@@ -143,7 +143,12 @@ At this stage, you are NOT expected to write automated tests. Instead, you shoul
 
 |Functionality Tested|Date|Time|Result|
 |--|--|--|--|
-|Sign Up|99/99/23|99:99|passed|
+|Sign Up|10/04/26|5:44|passed|
+|Login|10/04/26|5:45|passed|
+|Grade Entry|10/04/26|9:48|passed|
+|GPA Calc and Display|10/04/26|9:49|passed|
+|Delete Enrollment|10/04/26|9:51|passed|
+|Sign Out|10/04/26|9:54|passed|
 |...|...|...|...|
 
 # Deployment Phase
