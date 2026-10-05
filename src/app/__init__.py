@@ -35,5 +35,9 @@ def load_user(id):
         return db.session.query(User).filter(User.id==id).one()
     except: 
         return None
+        
 
 from app import routes
+
+    print(db.engine.url)
+    print(db.session.scalars(db.select(Course)).all())
