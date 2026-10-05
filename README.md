@@ -149,7 +149,7 @@ At this stage, you are NOT expected to write automated tests. Instead, you shoul
 |GPA Calc and Display|10/04/26|9:49|passed|
 |Delete Enrollment|10/04/26|9:51|passed|
 |Sign Out|10/04/26|9:54|passed|
-|...|...|...|...|
+
 
 # Deployment Phase
 
