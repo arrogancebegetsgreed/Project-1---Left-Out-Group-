@@ -190,3 +190,9 @@ Students should use this [form](https://forms.cloud.microsoft/r/RiQbbB9VhD) to e
 ![pic6](pics/pic6.png)
 
 ![pic7](pics/pic7.png)
+
+
+## Project documentation
+
+See [Documentation.md](Documentation.md) for the current implementation, local
+setup, architecture, and test report.
