@@ -7,3 +7,9 @@ ENV
 VENV
 .VENV
 
+
+# ignore generated database and caches
+instance/
+src/instance/
+__pycache__/
+*.pyc
